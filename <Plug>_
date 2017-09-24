@@ -6,11 +6,9 @@
 @import '@material/typography/_mixins';
 @import '@material/textfield/mdc-textfield';
 
-$mdc-theme-primary: #749de0;
-$mdc-theme-primary-light: #a7ceff;
-$mdc-theme-secondary: #9aadaf;
-$mdc-theme-background: #406fae;
-
+$mdc-theme-primary: #749de0; // Purple 500
+$mdc-theme-secondary: #aec2c6; // Orange A200
+$mdc-theme-background: #749de0; // White
 @import '@material/theme/mdc-theme';
 
 * {
@@ -23,7 +21,7 @@ $break: 525px;;
 
 body {
     @include mdc-typography-base;
-    background-color: #fafafa;
+    background-color: #f8f8f8;
 
     .links {
         display: flex;
