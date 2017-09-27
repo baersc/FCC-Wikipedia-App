@@ -1,6 +1,8 @@
 dist/*
 !dist/index.html
 
+src/LinuxLibertineWOFF/
+
 node_modules
 
 example.json

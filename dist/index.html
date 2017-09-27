@@ -4,20 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-
+  <script src="https://use.fontawesome.com/8374c22cb1.js"></script>
   <script src="bundle.js"></script>
-  <title>Wikipedia App</title>
+  <title>Wikipedia Search</title>
 </head>
 <body>
 
-  <div class="links">
-    <a href="https://github.com/baersc/FCC-Wikipedia-App">View Project on GitHub</a>
-    <a href="https://www.freecodecamp.org/baersc">freeCodeCamp</a>
-  </div>
-
   <div class="page">
+
     <div class="title mdc-theme--background">
-      <h1 class="title-text">Wikipedia Search</h1>
+      <h1 class="title-text">
+        <i class="fa fa-wikipedia-w" aria-hidden="true"></i>ikipedia
+        <i class="fa fa-search" aria-hidden="true"></i>
+      </h1>
     </div>
     <div class="form-container
                 mdc-form-field
@@ -33,15 +32,17 @@
           <button class="submit-button
                         mdc-button
                         mdc-button--raised
-                        mdc-button--primary"
-                  type="submit">
-            Submit
+                        mdc-button--primary
+                        mdc-button--dense"
+                  type="button">
+            Search
           </button>
 
           <button class="clear-button
                         mdc-button
                         mdc-button--raised
-                        mdc-button--primary"
+                        mdc-button--primary
+                        mdc-button--dense"
                   type="reset">
             Clear
           </button>
@@ -49,13 +50,29 @@
           <button class="random-button
                         mdc-button
                         mdc-button--raised
-                        mdc-button--accent"
+                        mdc-button--primary
+                        mdc-button--dense"
                   type="button">
             Random
           </button>
 
         </div>
       </form>
+
+      <div class="links">
+        <a href="https://github.com/baersc/FCC-Wikipedia-App"
+          target="_blank">
+          <i class="fa fa-github" aria-hidden="true"
+            title="View Project on Github"></i>
+        </a>
+
+        <a href="https://www.freecodecamp.org/baersc"
+           target="_blank">
+          <i class="fa fa-free-code-camp" aria-hidden="true"
+            title="freeCodeCamp"></i>
+        </a>
+      </div>
+
     </div>
   </div>
 

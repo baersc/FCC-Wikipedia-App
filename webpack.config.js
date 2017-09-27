@@ -31,11 +31,7 @@ module.exports = {
                 }],
             },
             {
-                test: /\.ttf$/,
-                use: ['file-loader'],
-            },
-            {
-                test: /\.json$/,
+                test: /\.woff$/,
                 use: ['file-loader'],
             },
         ],
