@@ -1,7 +1,6 @@
 /* eslint-env browser */
 import { MDCRipple } from '@material/ripple';
 import { MDCTextfield } from '@material/textfield';
-import { MDCSimpleMenu } from '@material/menu';
 import './style.scss';
 
 let searchResult;
@@ -26,7 +25,7 @@ function search() {
         searchRequest.send();
         searchRequest.onload = () => {
             searchResult = searchRequest.responseText;
-            window.console.log(JSON.parse(searchResult));
+            window.console.log(searchRequest);
         };
     }
 }
@@ -42,4 +41,20 @@ window.onload = () => {
     MDCTextfield.attachTo(document.querySelector('.mdc-textfield'));
 
     searchButton.addEventListener('click', () => search());
+
+    document.getElementsByClassName('clear-button')[0]
+        .addEventListener('click',
+            () => {
+                const input = document.getElementById('search-field');
+                if (input.value !== '') {
+                    input.value = '';
+                    input.focus();
+                }
+            });
+
+    document.getElementsByClassName('random-button')[0]
+        .addEventListener('click',
+            () =>
+                window.open('https://en.wikipedia.org/wiki/Special:Random'),
+        );
 };
