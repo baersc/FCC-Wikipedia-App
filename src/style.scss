@@ -12,6 +12,8 @@ $mdc-theme-primary-light: #a7ceff;
 $mdc-theme-secondary: #9aadaf;
 $mdc-theme-background: #4b2c20;
 
+$break: 525px;;
+
 @import '@material/theme/mdc-theme';
 
 @font-face {
@@ -27,8 +29,6 @@ $mdc-theme-background: #4b2c20;
     padding: 0;
     font-family: 'Linux Libertine';
 }
-
-$break: 525px;;
 
 body {
     @include mdc-typography-base;
@@ -56,7 +56,7 @@ body {
         }
     }
 
-    .page {
+    .search-bar {
         background-color: #fafafa;
 
         .title {
@@ -107,16 +107,31 @@ body {
             }
         }
     }
+
 }
 
 @media screen and (min-width: $break) {
     body {
-        .page {
+        .search-bar {
             @include mdc-elevation(5);
 
             margin: 20px auto 20px auto;
             background-color: #fdfdfd;
             width: 500px;
+        }
+
+        .search-results {
+            @include mdc-elevation(2);
+            margin: 20px auto 20px auto;
+            width: 900px;
+            height: 100px;
+            padding: 20px;
+            background-color: #fdfdfd;
+
+        }
+
+        .search-title-bar {
+            height: 50px;
         }
 
         button {
